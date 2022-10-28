@@ -14,6 +14,7 @@ namespace bytebank.Contas
         {
             this.Numero_agencia = numero_agencia;
             this.Conta = numero_conta;
+            TotalDeContasCriadas++;
         }
         private int _numero_agencia;
         public int Numero_agencia
@@ -27,7 +28,8 @@ namespace bytebank.Contas
                 }
             }
         }
-        //public string conta;
+
+        public static int TotalDeContasCriadas { get; set; }
         public string Conta { get; set; }
         private double _saldo = 100;
 

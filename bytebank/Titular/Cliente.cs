@@ -10,9 +10,10 @@ namespace bytebank.Titular
     {
         public Cliente()
         {
-
+            TotalDeCliente++;
         }
 
+        public static int TotalDeCliente { get; set; }
         public string Nome { get; set; }
         public string CPF { get; set; }
         public string Profissao { get; set; }
