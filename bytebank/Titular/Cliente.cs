@@ -8,8 +8,15 @@ namespace bytebank.Titular
 {
     public class Cliente
     {
-        public string nome;
-        public string CPF;
-        public string profissao;
+        public Cliente()
+        {
+
+        }
+
+        public string Nome { get; set; }
+        public string CPF { get; set; }
+        public string Profissao { get; set; }
+
+
     }
 }
